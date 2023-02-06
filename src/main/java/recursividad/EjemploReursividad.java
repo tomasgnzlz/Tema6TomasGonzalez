@@ -20,7 +20,7 @@ public class EjemploReursividad {
 //            imprimirNumRecursivo(num - 1);
 //            System.out.println(num);
 //            //Peta el programa xq no hay ni un caso. 
-//    }gug
+//    }
 
     public static void imprimirNumRecursivo(int num) {
         System.out.println(num);//SOLO SE MUESTRA EL CIHCO ACTIVO, EL PASIVO SE EJECUTA PERO NO SE LO MUESTRA POR CONSOLA.

@@ -16,7 +16,7 @@ public class Vehiculo {
     private double tarifa;
     private boolean disponible;
 
-    //Constructor.
+    //Constructor.shew
     public Vehiculo(String matricula, String modelo, String marca, String color) {
         this.matricula = matricula;
         this.modelo = modelo;

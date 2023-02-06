@@ -13,7 +13,7 @@ import javax.sound.midi.SysexMessage;
  */
 public class FuncionFactorialIterativo {
 
-    //Hacer ejemplo factorial iooterativo, no recursivo. 
+    //Hacer ejemplo factorial iterativo, no recursivo. 
     //5*4*3*2*1= 120
     public static void main(String[] args) {
         System.out.println(factorialIterativo(5));
