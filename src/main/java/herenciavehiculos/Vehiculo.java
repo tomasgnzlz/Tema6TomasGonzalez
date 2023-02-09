@@ -4,27 +4,40 @@
  */
 package herenciavehiculos;
 
+import java.util.Objects;
+
 /**
  *
  * @author tomas
  */
-public class Vehiculo {
+//Override --> SobreEscritura. 
+public class Vehiculo {//clase plantilla/abstracta
+
+    private Long bastidor;
     private String matricula;
-    private String modelo;
     private String marca;
+    private String modelo;
     private String color;
     private double tarifa;
     private boolean disponible;
 
-    //Constructor.shew
-    public Vehiculo(String matricula, String modelo, String marca, String color) {
+    public Vehiculo(Long bastidor, String matricula, String marca, String modelo, String color, double tarifa, boolean disponible) {
+        this.bastidor = bastidor;
         this.matricula = matricula;
-        this.modelo = modelo;
         this.marca = marca;
+        this.modelo = modelo;
         this.color = color;
+        this.tarifa = tarifa;
+        this.disponible = disponible;
     }
 
-    //Getters & Setters. 
+    public Long getBastidor() {
+        return bastidor;
+    }
+
+    public void setBastidor(Long bastidor) {
+        this.bastidor = bastidor;
+    }
 
     public String getMatricula() {
         return matricula;
@@ -34,20 +47,20 @@ public class Vehiculo {
         this.matricula = matricula;
     }
 
-    public String getModelo() {
-        return modelo;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
     public String getMarca() {
         return marca;
     }
 
     public void setMarca(String marca) {
         this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 
     public String getColor() {
@@ -73,8 +86,16 @@ public class Vehiculo {
     public void setDisponible(boolean disponible) {
         this.disponible = disponible;
     }
-    
-    
-    
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Vehiculo{");
+        sb.append("bastidor=").append(bastidor);
+        sb.append(", matricula=").append(matricula);
+        sb.append('}');
+        return sb.toString();
+    }
+
     
 }
