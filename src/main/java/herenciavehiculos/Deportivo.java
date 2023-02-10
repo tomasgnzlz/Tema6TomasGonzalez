@@ -18,7 +18,7 @@ public class Deportivo extends Vehiculo {
     // Constructores no se heredan. 
     // La primera línea de código de un constructor en la subclase(clase hija)
     // debe llamar al constructor de la superclase (padre)
-    public Deportivo(Long bastidor, String matricula, String marca, String modelo, String color, double tarifa, boolean disponible, int cilindrada) {
+    public Deportivo(int bastidor, String matricula, String marca, String modelo, String color, double tarifa, boolean disponible, int cilindrada) {
         super(bastidor, matricula, marca, modelo, color, tarifa, disponible);
         this.cilindrada = cilindrada;
     }

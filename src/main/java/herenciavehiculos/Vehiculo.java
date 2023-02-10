@@ -13,7 +13,7 @@ import java.util.Objects;
 //Override --> SobreEscritura. 
 public class Vehiculo {//clase plantilla/abstracta
 
-    private Long bastidor;
+    private int bastidor;
     private String matricula;
     private String marca;
     private String modelo;
@@ -21,7 +21,7 @@ public class Vehiculo {//clase plantilla/abstracta
     private double tarifa;
     private boolean disponible;
 
-    public Vehiculo(Long bastidor, String matricula, String marca, String modelo, String color, double tarifa, boolean disponible) {
+    public Vehiculo(int bastidor, String matricula, String marca, String modelo, String color, double tarifa, boolean disponible) {
         this.bastidor = bastidor;
         this.matricula = matricula;
         this.marca = marca;
@@ -31,11 +31,15 @@ public class Vehiculo {//clase plantilla/abstracta
         this.disponible = disponible;
     }
 
-    public Long getBastidor() {
+    public Vehiculo() {
+    }
+
+    
+    public int getBastidor() {
         return bastidor;
     }
 
-    public void setBastidor(Long bastidor) {
+    public void setBastidor(int bastidor) {
         this.bastidor = bastidor;
     }
 
@@ -97,5 +101,42 @@ public class Vehiculo {//clase plantilla/abstracta
         return sb.toString();
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 97 * hash + Objects.hashCode(this.bastidor);
+        hash = 97 * hash + Objects.hashCode(this.matricula);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Vehiculo other = (Vehiculo) obj;
+        if (!Objects.equals(this.matricula, other.matricula)) {
+            return false;
+        }
+        return Objects.equals(this.bastidor, other.bastidor);
+    }
+    
+    public void metodoDeportivo(){
+        System.out.println("Este método es de la clase deportivo.");
+    }
+    // Método Arrancar Vehciculo. 
+    public void arrancar(){
+        System.out.println("El vehiculo " + bastidor + " está arrancando");
+    }
+    // Método Arrancar Vehciculo. 
+    public void parar(){
+        System.out.println("El vehiculo " + bastidor + " está parando");
+    }
     
 }

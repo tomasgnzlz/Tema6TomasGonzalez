@@ -13,7 +13,7 @@ public class Turismo extends Vehiculo {
     private int puertas;
     private boolean marchaAutomatica;
 
-    public Turismo(Long bastidor, String matricula, String marca, String modelo, String color, double tarifa, boolean disponible, int puertas, boolean marchaAutomatica) {
+    public Turismo(int bastidor, String matricula, String marca, String modelo, String color, double tarifa, boolean disponible, int puertas, boolean marchaAutomatica) {
         super(bastidor, matricula, marca, modelo, color, tarifa, disponible);
         this.marchaAutomatica = marchaAutomatica;
         this.puertas = puertas;
