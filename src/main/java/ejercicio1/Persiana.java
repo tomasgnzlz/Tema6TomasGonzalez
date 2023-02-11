@@ -13,7 +13,7 @@ import java.util.Objects;
 public class Persiana extends Ventana {
 
     private String color;
-    
+
     // LE TENGO QUE METER LOS ATRIBUTOS DE ESTÁ CLASE A MANO, 
     // PORQUE EL CONSTRUCTOR SOLO ME PONE LOS ATRIBUTOS DE LA CLASE PERSIANA, 
     // NO ME MUESTRA LOS DE SU CLASE PADRE.
@@ -24,7 +24,7 @@ public class Persiana extends Ventana {
 
     public Persiana() {
     }
-    
+
     public String getColor() {
         return color;
     }
@@ -33,11 +33,10 @@ public class Persiana extends Ventana {
         this.color = color;
     }
 
-    
     @Override
     public String toString() {
         //Le meto el super para que tbn me enseñe el toString de su padre
-        return super.toString() + "| | |" +"Persiana{" + "color=" + color + '}';
+        return super.toString() + "| | |" + "Persiana{" + "color=" + color + '}';
     }
 
     @Override
@@ -61,5 +60,5 @@ public class Persiana extends Ventana {
         final Persiana other = (Persiana) obj;
         return Objects.equals(this.color, other.color);
     }
-    
+
 }
