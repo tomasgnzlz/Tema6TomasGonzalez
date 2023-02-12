@@ -6,7 +6,7 @@ package ejercicio3;
 
 /**
  *
- * @author Usuario
+ * @author tomas
  */
 public class Empleado extends Persona {
 

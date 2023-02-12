@@ -6,7 +6,7 @@ package ejercicio3;
 
 /**
  *
- * @author Usuario
+ * @author tomas
  */
 public enum CategoriasProgramador {
     ANALISTA, SENIOR, JUNIOR;
