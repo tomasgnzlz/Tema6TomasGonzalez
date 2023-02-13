@@ -32,25 +32,25 @@ public class VAbatible extends Ventana {
     public String toString() {
         return "VAbatible{" + "gradosApertura=" + gradosApertura + '}';
     }
+
     // Si le méto un valor, deja de ser sobreescritura.
-    public void abrir(){
-        
+    public void abrir() {
+
     }
 
     // Métodos abstractos.
     @Override
     public void abrir(int numero) {
-        //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+
         // Le doy el código a la ventana abatible.
         // Hay que indicar que está abierta, y además los grados de apertura que se calculan dividiendo el numero entre 2.
         this.setEstado(true);
-        this.gradosApertura = (numero/2);
-        
-                }
+        this.gradosApertura = (numero / 2);
+
+    }
 
     @Override
     public void cerrar(int numero) {
-        
-        
+
     }
 }

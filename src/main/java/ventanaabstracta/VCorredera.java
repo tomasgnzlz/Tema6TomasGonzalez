@@ -20,9 +20,9 @@ public class VCorredera extends Ventana {
     public VCorredera() {
     }
 
-    public VCorredera( int longApertura) {
+    public VCorredera(int longApertura) {
         super(true);
-        
+
     }
 
     public int getLongitudApertura() {
@@ -41,7 +41,6 @@ public class VCorredera extends Ventana {
     @Override
     public void abrir(int numero) {
         this.setEstado(true);
-        // Combprobar bla bla bla...
         this.longitudApertura = (numero);
     }
 

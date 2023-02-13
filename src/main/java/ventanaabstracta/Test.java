@@ -23,7 +23,9 @@ public class Test {
         
         
         
-        
+        for (Ventana v : conjuntoVentana) {
+            v.abrir(100);
+        }
     }
     
 }
