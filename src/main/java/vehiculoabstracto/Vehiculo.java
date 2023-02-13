@@ -9,7 +9,7 @@ package vehiculoabstracto;
  * @author tomas
  */
 // Hacer el ejercicio de los vehiculos, pero usando clases abstractas.
-public abstract class Vehiculo { // Clase VehiculoAbstracto
+public abstract class Vehiculo { // Clase VehiculosAbstractos
 
     private boolean estado;
     private int cilindrada;
