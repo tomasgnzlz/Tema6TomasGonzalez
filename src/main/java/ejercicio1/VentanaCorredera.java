@@ -24,6 +24,7 @@ public class VentanaCorredera extends Ventana {
         return super.toString() + " || " + " VentanaCorredera{" + '}';
     }
 
+    // ESTOS MÉTODOS LOS HEREDA, NO LOS VUELVO A HACER. 
     // Creo los métodos para abrir y cerrar dicha ventana. 
     public void abrirVentana() {
         System.out.println("La ventana corredera se está abriendo.");

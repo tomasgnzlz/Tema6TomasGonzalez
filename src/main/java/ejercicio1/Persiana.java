@@ -11,7 +11,7 @@ import java.util.Objects;
  * @author tomas
  */
 public class Persiana extends Ventana {
-
+    // ME FALTA EL ATRIBUTO ESTADO. 
     private String color;
 
     // LE TENGO QUE METER LOS ATRIBUTOS DE ESTÁ CLASE A MANO, 
