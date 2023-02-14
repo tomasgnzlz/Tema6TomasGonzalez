@@ -4,6 +4,7 @@
  */
 package repasoestructurasalmacenamiento;
 
+import java.lang.reflect.Array;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -17,8 +18,7 @@ public class Ejercicio1 {
 
         int n = pedirDimension();
         int[][] matriz = new int[n][n];
-        // Creo Array
-        rellenarMatrizRandom(n, matriz);
+        rellenarMatriz(n, matriz);
         mostrarMatriz(matriz);
 
     }
@@ -32,13 +32,16 @@ public class Ejercicio1 {
         return n;
     }
 
-    //Método para rellenar la matriz de valores de forma aleatoria.
-    public static void rellenarMatrizRandom(int n, int[][] matrizAux) {
-        int rangoValores = (n * n);
+    // Método para rellenar una matriz con valores de un array.
+    public static void rellenarMatriz(int n, int[][] matrizAux) {
+        int nValores = (n * n);
         Random random = new Random();
+        random.nextInt(nValores);
         for (int i = 0; i < matrizAux.length; i++) {
+            System.out.println(" ");
             for (int j = 0; j < matrizAux.length; j++) {
-                matrizAux[i][j] = random.nextInt(1, rangoValores) + 1;
+                matrizAux[i][j] = random.nextInt(nValores) + 1;
+                // COMO HACER PARA QUE NO SE REPITAN LOS VALORES. 
             }
         }
     }
@@ -52,5 +55,4 @@ public class Ejercicio1 {
             }
         }
     }
-
 }

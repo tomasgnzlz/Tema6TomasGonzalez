@@ -18,6 +18,7 @@ public class Ejercicio2 {public static void main(String[] args) {
         rellenarMatrizRandom(matriz);
         System.out.println("            MATRIZ CREADA");
         mostrarMatriz(matriz);
+        // LO QUE SIGUE...
 
     }
 
