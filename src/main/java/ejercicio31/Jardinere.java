@@ -33,4 +33,9 @@ public class Jardinere extends Empleado {
         return super.toString() + " || " + "Jardinere{" + "antiguedad=" + antiguedad + '}';
     }
 
+    //Implemento el comparator para que se ordene por su antiguedad. 
+    public int compareTo(Jardinere jAux) {
+        return Integer.compare(antiguedad, jAux.getAntiguedad());
+    }
+
 }

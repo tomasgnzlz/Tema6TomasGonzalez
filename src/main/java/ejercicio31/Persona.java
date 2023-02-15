@@ -2,14 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package ejercicio3;
+package ejercicio31;
 
 /**
  *
  * @author tomas
  */
-public class Persona {
-    
+public class Persona implements Comparable<Persona> {
+
     private String nombre;
     private String nif;
     private int edad;
@@ -51,6 +51,10 @@ public class Persona {
     public String toString() {
         return "Persona {" + "Nombre=" + nombre + ", NIF=" + nif + ", Edad=" + edad + '}';
     }
-    
-    
+
+    @Override
+    public int compareTo(Persona o) {
+        // Hago que el comparator se ordene según el nif.
+        return this.nif.compareToIgnoreCase(nif);
+    }
 }
