@@ -12,22 +12,22 @@ public class Persona {
     
     private String nombre;
     private String nif;
-    private String edad;
+    private int edad;
 
     public Persona() {
     }
 
-    public Persona(String nombre, String nif, String edad) {
+    public Persona(String nombre, String nif, int edad) {
         this.nombre = nombre;
         this.nif = nif;
         this.edad = edad;
     }
 
-    public String getEdad() {
+    public int getEdad() {
         return edad;
     }
 
-    public void setEdad(String edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
 

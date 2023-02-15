@@ -9,12 +9,13 @@ package ejercicio3;
  * @author tomas
  */
 public class PruebaEj3 {
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Persona p1 = new Persona("Tomas", "bktslmvrwr", 19);
+        Empleado e1 = new Empleado(1000, "Ariel", "jlvnt3434", 23);
+        Programador pr1 = new Programador(CategoriasProgramador.ANALISTA, 1200, "Tomás Ariel", "e5tetbr", 032);
+        
     }
     
 }

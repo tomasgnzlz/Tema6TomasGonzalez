@@ -15,7 +15,7 @@ public class Programador extends Empleado {
     public Programador() {
     }
 
-    public Programador(CategoriasProgramador categoria, int salario, String nombre, String nif, String edad) {
+    public Programador(CategoriasProgramador categoria, int salario, String nombre, String nif, int edad) {
         super(salario, nombre, nif, edad);
         this.categoria = categoria;
     }
