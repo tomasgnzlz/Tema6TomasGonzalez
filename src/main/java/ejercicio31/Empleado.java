@@ -8,7 +8,7 @@ package ejercicio31;
  *
  * @author tomas
  */
-public class Empleado extends Persona {
+public abstract class Empleado extends Persona {
 
     private int salario;
 
@@ -34,7 +34,8 @@ public class Empleado extends Persona {
     }
 
     // Método que permita aumentar el salario en una cantidad que será pasada por parámetro. 
-    public int cambiarSalarioEmpleado(int salarioNuevo) {
-        return this.salario = salarioNuevo;
-    }
+    public abstract void cambiarSalarioEmpleado(int salarioNuevo);
+    // Ahora los hijos han de darle clase el código al método. 
+
+    // CAMBIAR EL MÉTODO PARA PODER AUNMENTAR EL SALARIO EN UN %. X EJEMPLO EN UN 40% EN JARDINERE Y UN 60% EN PROGRAMADOR. 
 }

@@ -24,4 +24,9 @@ public class Programador extends Empleado {
     public String toString() {
         return super.toString() + " || " + "Programador{" + "categoria=" + categoria + '}';
     }
+
+    @Override
+    public void cambiarSalarioEmpleado(int salarioNuevo) {
+        this.setSalario(salarioNuevo);
+    }
 }

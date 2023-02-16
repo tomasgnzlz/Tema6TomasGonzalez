@@ -55,6 +55,6 @@ public class Persona implements Comparable<Persona> {
     @Override
     public int compareTo(Persona o) {
         // Hago que el comparator se ordene según el nif.
-        return this.nif.compareToIgnoreCase(nif);
+        return this.nif.compareTo(o.nif);
     }
 }
