@@ -48,5 +48,5 @@ public abstract class Vehiculo { // Clase VehiculosAbstractos
 
     public abstract void ApagarVehiculo(); // Lo mismo pasa con este método. 
 
-    // SI LE PASO LA CILINDRADA, SE SABRÁ EL VEHICULO EXACTO QUE SE DESEA APAGAR.
+    // SI LE PASO LA CILINDRADA, SE SABRÁ EL VEHICULO EXACTO QUE SE DESEA ARRANCAR/APAGAR.
 }
