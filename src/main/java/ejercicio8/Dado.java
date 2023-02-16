@@ -19,6 +19,11 @@ public class Dado extends Azar {
     @Override
     public int lanzar() {
         return new Random().nextInt(1, this.getPosibilidades() + 1);
+        // Se puede hacer de otra manera. 
 
+    }
+    
+    public void metodoDado(){
+        System.out.println("rvw");
     }
 }

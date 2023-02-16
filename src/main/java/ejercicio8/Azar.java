@@ -10,7 +10,7 @@ package ejercicio8;
  */
 public abstract class Azar {
 
-    private int posibilidades;
+    protected int posibilidades; // protected, no private.
 
     public Azar(int posibilidades) {
         this.posibilidades = Math.abs(posibilidades);
