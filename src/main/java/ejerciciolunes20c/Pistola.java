@@ -9,7 +9,7 @@ package ejerciciolunes20c;
  * @author tomas
  */
 public class Pistola extends Armas {
-    private double calibre;
+     double calibre;
 
     public Pistola(double calibre) {
         this.calibre = calibre;
@@ -27,10 +27,22 @@ public class Pistola extends Armas {
     public void setCalibre(double calibre) {
         this.calibre = calibre;
     }
+
+    @Override
+    public String toString() {
+        return "Pistola{" + "calibre=" + calibre + super.toString()+ '}' ;
+    }
     
     //Método exclusivo de está clase.
     public void cambiarCalibreArma(double calibreNuevo){
         this.calibre = calibreNuevo;
+    }
+
+    //Método abstracto heredado de la clase padre.
+    @Override
+    public void cambiarnombre(String nombreAux) {
+        //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        
     }
     
     

@@ -10,7 +10,7 @@ import java.util.Objects;
  *
  * @author tomas
  */
-public class Armas implements Comparable<Armas> {
+public abstract class Armas implements Comparable<Armas> {
 
     private String nombre;
     private String tipoArma;
@@ -86,11 +86,9 @@ public class Armas implements Comparable<Armas> {
 
     @Override
     public int compareTo(Armas o) {
-        //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-        
+        return this.nombre.compareToIgnoreCase(o.nombre);
     }
-    
-    
 
-
+    //Método abstracto.
+    public abstract void cambiarnombre( String nombreAux);
 }

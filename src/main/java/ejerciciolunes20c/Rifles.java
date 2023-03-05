@@ -45,7 +45,14 @@ public class Rifles extends Armas {
         return "Rifles{" + "calibre=" + calibre + ", alcance=" + alcance + '}';
     }
 
+    //Método exclusivo de está clase.
     public void cambiarAlcanceRifle(double alcanceAux) {
         this.calibre = alcanceAux;
+    }
+
+    //Método abstracto heredado de la clase padre.
+    @Override
+    public void cambiarnombre(String nombreAux) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
