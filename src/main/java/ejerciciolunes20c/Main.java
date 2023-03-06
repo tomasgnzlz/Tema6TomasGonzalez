@@ -38,6 +38,8 @@ public class Main {
             System.out.println(a
             );
         }
+        // Busqueda Binaria. 
+        int posicionObjeto;
         
         // Me falta lo del ValueOf y busqueda binaria.
 
