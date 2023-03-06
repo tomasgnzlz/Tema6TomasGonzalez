@@ -53,6 +53,6 @@ public class Rifles extends Armas {
     //Método abstracto heredado de la clase padre.
     @Override
     public void cambiarnombre(String nombreAux) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.nombre = nombreAux;
     }
 }

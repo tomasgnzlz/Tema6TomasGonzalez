@@ -12,9 +12,9 @@ import java.util.Objects;
  */
 public abstract class Armas implements Comparable<Armas> {
 
-    private String nombre;
-    private String tipoArma;
-    private String color;
+    protected String nombre;
+    protected String tipoArma;
+    protected String color;
 
     public Armas() {
     }
