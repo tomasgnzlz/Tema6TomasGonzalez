@@ -23,7 +23,7 @@ public class Main {
         Silla s5 = new Silla(59.5, "Silla5");
         Silla s6 = new Silla(100, "Silla6");
         
-        
+        //mapSillas.put(s6, Double.NaN);
         
         
         

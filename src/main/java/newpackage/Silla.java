@@ -10,7 +10,7 @@ import java.util.Objects;
  *
  * @author tomas
  */
-public class Silla  implements Comparable<Silla>{
+public class Silla implements Comparable<Silla> {
 
     private double peso;
     private String nombre;
@@ -47,10 +47,20 @@ public class Silla  implements Comparable<Silla>{
     }
 
     @Override
+    public int compareTo(Silla o) {
+        return this.nombre.compareToIgnoreCase(o.getNombre());
+        //return Double.compare(peso,peso);
+    }
+
+        
+    // EQUALS --> HASHCODE (Saber si dos objetos son iguales)
+    
+    // COMPARAR OBJETOS PARA ORDENARLOS SEGÚN UN ORDEN NATURAL --> Comparable(TreeSet,TreeMap,collectionsSort pasandole el criterio de ordenacion)
+
+    @Override
     public int hashCode() {
         int hash = 7;
-        hash = 47 * hash + (int) (Double.doubleToLongBits(this.peso) ^ (Double.doubleToLongBits(this.peso) >>> 32));
-        hash = 47 * hash + Objects.hashCode(this.nombre);
+        hash = 97 * hash + Objects.hashCode(this.nombre);
         return hash;
     }
 
@@ -66,18 +76,7 @@ public class Silla  implements Comparable<Silla>{
             return false;
         }
         final Silla other = (Silla) obj;
-        if (Double.doubleToLongBits(this.peso) != Double.doubleToLongBits(other.peso)) {
-            return false;
-        }
         return Objects.equals(this.nombre, other.nombre);
     }
-
-    @Override
-    public int compareTo(Silla o) {
-        return this.nombre.compareToIgnoreCase(nombre);
-        //return Double.compare(peso,peso);
-    }
-    
-    
 
 }
