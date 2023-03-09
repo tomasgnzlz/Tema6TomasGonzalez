@@ -39,7 +39,7 @@ public abstract class Legislador extends Persona {
         this.partidoPolitico = partidoPolitico;
     }
 
-    public abstract void getCamaraEnQueTrabaja();
+    public abstract void getPuestoTrabajo();
 
     @Override
     public String toString() {

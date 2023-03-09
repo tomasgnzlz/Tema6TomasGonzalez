@@ -29,7 +29,7 @@ public class PruebaLegislador {
         for (Legislador l1 : listaLegisladores) {
             System.out.println(l1.toString());
             System.out.println("Su puesto es...");
-            l1.getCamaraEnQueTrabaja();
+            l1.getPuestoTrabajo();
         }
 
     }

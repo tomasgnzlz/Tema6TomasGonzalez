@@ -31,7 +31,7 @@ public class Diputado extends Legislador {
     }
 
     @Override
-    public void getCamaraEnQueTrabaja() {
+    public void getPuestoTrabajo() {
         System.out.println("Es un Diputado");
     }
 

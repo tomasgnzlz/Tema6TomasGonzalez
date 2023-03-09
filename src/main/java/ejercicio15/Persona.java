@@ -7,7 +7,7 @@ package ejercicio15;
 /**
  *
  * @author tomas
- */
+ */ //--
 public class Persona {
 
     private String nombre;
