@@ -32,11 +32,7 @@ public class Senador extends Legislador {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(super.toString());
-
-        sb.append("  Complemento=").append(complemento);
-
-        return sb.toString();
+        return "Senador{" + "complemento=" + complemento + '}';
     }
+
 }

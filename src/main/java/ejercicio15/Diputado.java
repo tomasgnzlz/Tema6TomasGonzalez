@@ -9,7 +9,7 @@ package ejercicio15;
  * @author tomas
  */
 public class Diputado extends Legislador {
-    
+
     private int numeroAsiento;
 
     public Diputado(int numeroAsiento, String provincia, String partidoPolitico, String nombre, String apellidos) {
@@ -27,17 +27,12 @@ public class Diputado extends Legislador {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(super.toString());
-
-        sb.append(" Numero de Asiento=").append(numeroAsiento);
-
-        return sb.toString();
+        return "Diputado{" + "numeroAsiento=" + numeroAsiento + '}';
     }
 
     @Override
     public void getCamaraEnQueTrabaja() {
         System.out.println("Es un Diputado");
     }
-    
+
 }

@@ -46,6 +46,4 @@ public abstract class Legislador extends Persona {
         return "Legislador{" + "provincia=" + provincia + ", partidoPolitico=" + partidoPolitico + '}';
     }
 
-   
-
 }

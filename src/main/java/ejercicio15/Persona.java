@@ -9,6 +9,7 @@ package ejercicio15;
  * @author tomas
  */
 public class Persona {
+
     private String nombre;
     private String apellidos;
 
@@ -40,7 +41,5 @@ public class Persona {
     public String toString() {
         return "Persona{" + "nombre=" + nombre + ", apellidos=" + apellidos + '}';
     }
-
-  
 
 }
