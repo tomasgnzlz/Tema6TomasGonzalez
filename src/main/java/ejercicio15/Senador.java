@@ -26,13 +26,13 @@ public class Senador extends Legislador {
     }
 
     @Override
-    public void getCamaraEnQueTrabaja() {
-        System.out.println("Es un Senador");
+    public String toString() {
+        return "Senador{" + "complemento=" + complemento + '}';
     }
 
     @Override
-    public String toString() {
-        return "Senador{" + "complemento=" + complemento + '}';
+    public void getPuestoTrabajo() {
+        System.out.println("Es un Senador");
     }
 
 }
