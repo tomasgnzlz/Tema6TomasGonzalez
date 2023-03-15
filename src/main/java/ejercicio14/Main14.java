@@ -20,7 +20,7 @@ public class Main14 {
         lista.add(new Frigorifico(100, 50, "Uno"));
         lista.add(new Microondas(70, 40, "Otro"));
         // lista.add(new CampanaExtractora)
-        // No puedo añadir  a la lista la CampanaExtractora, porque es abstracta.
+        // No puedo añadir  a la lista la CampanaExtractora, PORQUE NO ES DE ESE TIPO
 
     }
 

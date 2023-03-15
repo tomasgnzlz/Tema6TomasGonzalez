@@ -21,6 +21,9 @@ Se desea manejar una lista de tamaño variable de Robots.
         */
 public class MainRobots {
     public static void main(String[] args) {
+        
+        Robot r = new Robot();
+        System.out.println(r);
        
     }
     

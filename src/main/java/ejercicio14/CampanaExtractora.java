@@ -9,8 +9,8 @@ package ejercicio14;
  * @author tomas
  */
 // Como la clase Electrodomestico implementa la interfaz y está es su hija, debería de implementarlas tb.
-// Pero como no me pide implementarla, la pongo abstracta para que no me de el error.
-public  abstract class CampanaExtractora extends Electrodomestico {
+// Pero como no me pide implementarla, la pongo abstracta para que no me de el error. NO TENOG QUE PONER ABSTRACT, ESO ESTABA MAL XQ LE ESTABA DICIENDO QUE 
+public  class CampanaExtractora extends Electrodomestico {
 
     private double decibelios; // dB
 

@@ -8,7 +8,7 @@ package ejercicio14;
  *
  * @author tomas
  */
-public abstract class Electrodomestico implements Silencioso {
+public class Electrodomestico{
 
     private double consumo;
     private String modelo;
