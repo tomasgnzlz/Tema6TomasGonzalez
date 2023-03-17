@@ -49,7 +49,7 @@ public class Medico extends Empleado implements Nadadores{
 
     // Método tratarPAcientes. 
     public void tratar(Paciente pacienteAux, String medicina) {
-        System.out.println("El medico ¿?  trata a " + pacienteAux + " con la medicina " + medicina);
+        System.out.println("El medico "+ this.getNombre() +"  trata a " + pacienteAux + " con la medicina " + medicina);
     }
 
     @Override

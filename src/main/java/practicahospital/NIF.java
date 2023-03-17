@@ -61,7 +61,7 @@ public class NIF {
         return (char) (r.nextInt(26) + 'A');
     }
 
-    public static LocalDate renovar(LocalDate fechaSolicitudRenovacion) { // Esta es la fecha en la que yo quiero que me renueven el dni. 
+    final public LocalDate renovar(LocalDate fechaSolicitudRenovacion) { // Esta es la fecha en la que yo quiero que me renueven el dni. 
         return fechaSolicitudRenovacion.plusYears(10);
     }
 
