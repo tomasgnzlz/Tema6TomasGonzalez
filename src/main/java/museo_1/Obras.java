@@ -10,11 +10,11 @@ import java.util.List;
  *
  * @author tomas
  */
-public abstract class Obras {
+public abstract class Obras { // si pongo un enum no tiene sentido que la clase sea abstracta, ya que cuando es abstracta es para poder crear clases hijas a partir de ésta. 
     
     private String id;
     private String autor;
-    private TipoObras tipoObras;
+    private TipoObras tipoObras; // Crear dos obrasHijas: Pinturicas escultoricas. 
 
     // Constructor predeterminado. 
     public Obras(String id, String autor, TipoObras tipoObras) {

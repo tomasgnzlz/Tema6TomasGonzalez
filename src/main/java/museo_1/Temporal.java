@@ -17,11 +17,13 @@ public final class Temporal extends Salas {
     private LocalDate fechaFin;
 
     // Conmstructor parametrizado. 
-    public Temporal(LocalDate fechaIni, LocalDate fechaFin, int idSala, List<Sensor> listaSensores, List<Obras> listaObras) {
-        super(idSala, listaSensores, listaObras);
+
+    public Temporal(LocalDate fechaIni, LocalDate fechaFin, int idSala, Temperatura sensorTemp, Humedad sensorHum, List<Obras> listaObras) {
+        super(idSala, sensorTemp, sensorHum, listaObras);
         this.fechaIni = fechaIni;
         this.fechaFin = fechaFin;
     }
+ 
 
     // Getters y Setters.
     public LocalDate getFechaIni() {

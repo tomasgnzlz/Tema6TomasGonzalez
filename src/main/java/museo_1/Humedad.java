@@ -35,6 +35,7 @@ public final class Humedad extends Sensor {
     // Método max-humedad.
     public boolean maximaHumedad(double humedadAmbiente) {
         return humedadAmbiente > 20.0;
+        // modificarlo para que cuando salte la alarma, llamar al metodo abtracto alarma. 
     }
 
     // Método min-humedad.
