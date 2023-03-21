@@ -26,7 +26,6 @@ public class MuseoMain {
         // Creo el museo con sus respectivas listas. 
         List<Empleado> listaEmpleados = new ArrayList<>();
         List<Salas> listaSalas = new ArrayList<>();
-        List<Obras> listaObras = new ArrayList<>();
         List<Escultoricas> listaObrasEscult = new ArrayList<>();
         List<Pinturicas> listaObrasPintu = new ArrayList<>();
         Museo m1 = new Museo("Museo Programación", "IES Mar Albroan", listaEmpleados, listaSalas);
