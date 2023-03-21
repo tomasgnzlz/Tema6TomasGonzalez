@@ -14,15 +14,15 @@ public abstract class Obras { // si pongo un enum no tiene sentido que la clase 
 
     private String id;
     private String autor;
-    private Obras pinturicas;
-    private Obras Escultoricas;
 
-    public Obras(String id, String autor, Obras pinturicas, Obras Escultoricas) {
+    public Obras(String id, String autor) {
         this.id = id;
         this.autor = autor;
-        this.pinturicas = pinturicas;
-        this.Escultoricas = Escultoricas;
     }
+
+    public Obras() {
+    }
+    
 
     public String getId() {
         return id;
@@ -40,25 +40,11 @@ public abstract class Obras { // si pongo un enum no tiene sentido que la clase 
         this.autor = autor;
     }
 
-    public Obras getPinturicas() {
-        return pinturicas;
-    }
-
-    public void setPinturicas(Obras pinturicas) {
-        this.pinturicas = pinturicas;
-    }
-
-    public Obras getEscultoricas() {
-        return Escultoricas;
-    }
-
-    public void setEscultoricas(Obras Escultoricas) {
-        this.Escultoricas = Escultoricas;
-    }
-
     @Override
     public String toString() {
-        return "Obras{" + "id=" + id + ", autor=" + autor + ", pinturicas=" + pinturicas + ", Escultoricas=" + Escultoricas + '}';
+        return "Obras{" + "id=" + id + ", autor=" + autor + '}';
     }
+
+    
 
 }

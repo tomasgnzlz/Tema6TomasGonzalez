@@ -9,12 +9,15 @@ package museo2_tarea6b;
  * @author tomas
  */
 public class Pinturicas extends Obras {
-    
+
     private double precio;
 
-    public Pinturicas(double precio, String id, String autor, Obras pinturicas, Obras Escultoricas) {
-        super(id, autor, pinturicas, Escultoricas);
+    public Pinturicas(double precio, String id, String autor) {
+        super(id, autor);
         this.precio = precio;
+    }
+
+    public Pinturicas() {
     }
 
     public double getPrecio() {
@@ -29,10 +32,5 @@ public class Pinturicas extends Obras {
     public String toString() {
         return "Pinturicas{" + "precio=" + precio + '}';
     }
-    
-    
-    
-    
-    
-    
+
 }

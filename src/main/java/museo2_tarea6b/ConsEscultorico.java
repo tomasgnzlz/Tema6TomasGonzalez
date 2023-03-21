@@ -36,5 +36,4 @@ public class ConsEscultorico extends Conservador implements Restaurador {
     public void restaurarObra() {
         System.out.println("Estoy restaurando una obra");
     }
-
 }

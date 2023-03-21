@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @author tomas
  */
-public class ConsPinturico extends Conservador implements Restaurador {
+public class ConsPinturico extends Conservador implements Restaurador{
 
     private List<Pinturicas> obrasPinturicas; // Lista de obras escultoricas para restaurar.
 

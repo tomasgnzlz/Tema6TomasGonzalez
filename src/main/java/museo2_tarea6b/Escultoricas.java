@@ -14,8 +14,8 @@ public class Escultoricas extends Obras {
     
     private MaterialesEsculturas material;
 
-    public Escultoricas(MaterialesEsculturas material, String id, String autor, Obras pinturicas, Obras Escultoricas) {
-        super(id, autor, pinturicas, Escultoricas);
+    public Escultoricas(MaterialesEsculturas material, String id, String autor) {
+        super(id, autor);
         this.material = material;
     }
 

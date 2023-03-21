@@ -8,7 +8,7 @@ package museo2_tarea6b;
  *
  * @author tomas
  */
-public class Conservador extends Empleado {
+public abstract class Conservador extends Empleado{
     
     private String id;
 
@@ -27,9 +27,9 @@ public class Conservador extends Empleado {
 
     @Override
     public String toString() {
-        return "Conservador{" + "id=" + id + '}';
+        return super.toString() + " || Conservador{" + "id=" + id + '}';
     }
-    
+
     
     
 }
