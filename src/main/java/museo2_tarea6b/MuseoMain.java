@@ -21,7 +21,7 @@ public class MuseoMain {
     Crea un conjunto de obras únicas con todas las obras que haya en el museo (en este ejemplo habrá 2). (LISTADEOBRAS)
     Contrata a dos conservadores, uno escultórico y otro pictórico. 
     Realiza la restauración de las obras del museo por parte del conservador pictórico.
-     */
+    */
     public static void main(String[] args) {
         // Creo el museo con sus respectivas listas. 
         List<Empleado> listaEmpleados = new ArrayList<>();
@@ -64,7 +64,7 @@ public class MuseoMain {
         System.out.println("\n Conservadores \n");
         for (Empleado e : listaEmpleados) {
             if (e instanceof ConsEscultorico) {
-                ((ConsEscultorico) e).restaurarObra();
+                ((ConsEscultorico) e).restaurarObra(); // Le hago casting. 
             } else {
                 ((ConsPinturico) e).restaurarObra();
             }
