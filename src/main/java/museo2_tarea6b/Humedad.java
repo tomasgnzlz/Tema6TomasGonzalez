@@ -10,7 +10,7 @@ package museo2_tarea6b;
  */
 public final class Humedad extends Sensor {
 
-    private final double indiceHumedad;
+    private double indiceHumedad;
 
     public Humedad(double indiceHumedad, int id) {
         super(id);

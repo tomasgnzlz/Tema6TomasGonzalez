@@ -16,7 +16,7 @@ public final class Fija extends Salas {
 
     // Constructor. 
 
-    public Fija(String estado, int idSala, Temperatura sensorTemp, Humedad sensorHum, List<Obras> listaObras) {
+    public Fija(String estado, int idSala, Temperatura sensorTemp, Humedad sensorHum,Obras listaObras) {
         super(idSala, sensorTemp, sensorHum, listaObras);
         this.estado = estado;
     }

@@ -16,28 +16,23 @@ public abstract class Salas {
     // private List<Sensor> listaSensores; // Se puede hacer pero como solo es 1 x sala mejor poner 1 de cada. 
     private Sensor sensorTemp;
     private Sensor sensorHum;
-    private List<Obras> listaObras;
+    private Obras listaObras;
 
     // Contructor parametrizado. 
-    public Salas(int idSala, Temperatura sensorTemp, Humedad sensorHum, List<Obras> listaObras) {// Aqui le tengo que decir que tipo de sensorle paso, paraq no se puedan colar dos sensores de temperatura y no uno de cada. 
+    public Salas(int idSala, Temperatura sensorTemp, Humedad sensorHum, Obras listaObras) {// Aqui le tengo que decir que tipo de sensorle paso, paraq no se puedan colar dos sensores de temperatura y no uno de cada. 
         this.idSala = idSala;
         this.sensorTemp = sensorTemp;
         this.sensorHum = sensorHum;
         this.listaObras = listaObras;
     }
-    
-
-    // Geters & Setters. 
-  
 
     // ToString. 
-   
-
     @Override
     public String toString() {
         return "Salas{" + "idSala=" + idSala + ", sensorTemp=" + sensorTemp + ", sensorHum=" + sensorHum + ", listaObras=" + listaObras + '}';
     }
 
+    // Geters & Setters. 
     public Sensor getSensorTemp() {
         return sensorTemp;
     }
@@ -62,11 +57,11 @@ public abstract class Salas {
         this.idSala = idSala;
     }
 
-    public List<Obras> getListaObras() {
+    public Obras getListaObras() {
         return listaObras;
     }
 
-    public void setListaObras(List<Obras> listaObras) {
+    public void setListaObras(Obras listaObras) {
         this.listaObras = listaObras;
     }
 

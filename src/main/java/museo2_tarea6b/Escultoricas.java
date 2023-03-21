@@ -11,27 +11,33 @@ import java.util.List;
  * @author tomas
  */
 public class Escultoricas extends Obras {
-    
-    private MaterialesEsculturas material;
 
-    public Escultoricas(MaterialesEsculturas material, String id, String autor) {
+    // Declaración de atributos. 
+    private double precio;
+
+    // Constructor parametrizado. 
+    public Escultoricas(double precio, String id, String autor) {
         super(id, autor);
-        this.material = material;
+        this.precio = precio;
     }
 
-    public MaterialesEsculturas getMaterial() {
-        return material;
+    // Getters y Setters. 
+    public double getPrecio() {
+        return precio;
     }
 
-    public void setMaterial(MaterialesEsculturas material) {
-        this.material = material;
+    public void setPrecio(double precio) {
+        this.precio = precio;
     }
 
+    // ToString. 
     @Override
     public String toString() {
-        return "Escultoricas{" + "material=" + material + '}';
+        return super.toString() + " || Escultoricas{" + "precio=" + precio + '}';
     }
     
     
+
     
+
 }

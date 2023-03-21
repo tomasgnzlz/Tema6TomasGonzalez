@@ -12,6 +12,7 @@ public class Pinturicas extends Obras {
 
     private double precio;
 
+    // Constructor
     public Pinturicas(double precio, String id, String autor) {
         super(id, autor);
         this.precio = precio;
@@ -20,6 +21,7 @@ public class Pinturicas extends Obras {
     public Pinturicas() {
     }
 
+    // Getters y Setters. 
     public double getPrecio() {
         return precio;
     }

@@ -32,6 +32,4 @@ public class Vigilante extends Empleado {
     public String toString() {
         return "Vigilante{" + "turno=" + turno + '}';
     }
-
-    //Esoceger turno aleatorio. 
 }

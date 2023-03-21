@@ -12,10 +12,12 @@ public abstract class Sensor {
     
     private int id;
 
+    // Constructor
     public Sensor(int id) {
         this.id = id;
     }
 
+    // Getters y Setters. 
     public int getId() {
         return id;
     }
@@ -24,6 +26,7 @@ public abstract class Sensor {
         this.id = id;
     }
 
+    // ToString.
     @Override
     public String toString() {
         return "Sensor{" + "id=" + id + '}';

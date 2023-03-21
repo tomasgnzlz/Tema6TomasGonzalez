@@ -24,6 +24,7 @@ public abstract class Obras { // si pongo un enum no tiene sentido que la clase 
     }
     
 
+    // Getters y Setters. D
     public String getId() {
         return id;
     }
@@ -40,6 +41,7 @@ public abstract class Obras { // si pongo un enum no tiene sentido que la clase 
         this.autor = autor;
     }
 
+    // ToString. 
     @Override
     public String toString() {
         return "Obras{" + "id=" + id + ", autor=" + autor + '}';

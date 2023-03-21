@@ -12,11 +12,13 @@ public class Temperatura extends Sensor {
 
     private double temperaturaAmbiente;
 
+    // Constructor. 
     public Temperatura(double temperaturaAmbiente, int id) {
         super(id);
         this.temperaturaAmbiente = temperaturaAmbiente;
     }
 
+    // Getters y Setters.
     public double getTemperaturaAmbiente() {
         return temperaturaAmbiente;
     }
@@ -25,11 +27,13 @@ public class Temperatura extends Sensor {
         this.temperaturaAmbiente = temperaturaAmbiente;
     }
 
+    // ToStrring. 
     @Override
     public String toString() {
         return super.toString() + " || Temperatura{" + "temperaturaAmbiente=" + temperaturaAmbiente + "ºC " + '}';
     }
 
+    // Método abstracto. 
     @Override
     public void alarma() {
         System.out.println("¡¡¡¡¡¡HUMEDAD!!!!!!");
