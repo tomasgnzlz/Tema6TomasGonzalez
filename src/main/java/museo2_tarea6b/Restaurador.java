@@ -10,6 +10,6 @@ package museo2_tarea6b;
  */
 public interface Restaurador {
     // Creo la interfaz restaurador que se le aplicará a aquellos empleados que restauren obras. 
-    void restaurarObra();
+    void restaurarObra(); // Aqui tengo que pasarle una obra para que solo los conesEscult resuatren esculturas y los pictoricos solo cuadros. 
     
 }
