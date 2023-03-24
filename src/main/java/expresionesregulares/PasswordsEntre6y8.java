@@ -1,5 +1,5 @@
 
-package maralboran.expresionesregulares;
+package expresionesregulares;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -15,6 +15,7 @@ public class PasswordsEntre6y8 {
         // La cadena debe comenzar exactamente con este patrón.
         // El caracter $ indica que la cadena debe terminar exactamente con este patrón.
         String regexp = "^.{6,8}$";
+        String regexp2 = "Tomas";
         // Estos string guardan las cadenas de texto de ejemplo para evaluar
         String ejemplo1 = "2345!%!";
         String ejemplo2 = "235!%!%$contraseña!";
@@ -27,6 +28,11 @@ public class PasswordsEntre6y8 {
         }
         
         if (ejemplo2.matches(regexp)){ // Este ejemplo devuelve false por el tamaño de la cadena
+            System.out.println("La cadena de texto ejemplo2 coincide exactamente con la expresión regular");
+        }
+        
+        System.out.println("eJEMPLO");
+        if (ejemplo2.matches(regexp2)){ // Este ejemplo devuelve false por el tamaño de la cadena
             System.out.println("La cadena de texto ejemplo2 coincide exactamente con la expresión regular");
         }
         

@@ -1,13 +1,11 @@
-
-package maralboran.expresionesregulares;
+package expresionesregulares;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
 public class Fechas {
-    
-     public static void main(String[] args) {
+
+    public static void main(String[] args) {
         // Suponemos días, meses y años separados con -
         String fecha = "23-08-2021";
         String regex
@@ -30,5 +28,5 @@ public class Fechas {
         }
 
     }
-    
+
 }

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package maralboran.expresionesregulares;
+package expresionesregulares;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -16,7 +16,7 @@ public class NumeroTelefonoMovil {
     public static void main(String[] args) {
         // Número de teléfono móvil que empieza con + prefijo internacional
         // y luego el número debe comenzar por 6 o 7
-        
+
         String numero = "+34676667111";
         String regex
                 = "^\\+(\\d{2})(?:[67]\\d{8})$";
@@ -29,8 +29,7 @@ public class NumeroTelefonoMovil {
             debe haber al menos un 6 o un 7 y  el resto \\d{8} es el que detecta los 8 dígitos 
             restantes del cualesquiera número móvil.
             Si se quiere capturar el grupo que contiene el número sin el prefijo hay que quitar el ?:
-        */
-        
+         */
         boolean isValidNumber = numero.matches(regex);
         System.out.println(isValidNumber);
 
