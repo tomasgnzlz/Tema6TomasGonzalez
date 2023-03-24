@@ -50,8 +50,9 @@ public class Circulo extends Figura implements Movible, Comparable<Circulo> {
 
     @Override
     public void moverIzq(int x) {
-        Point p1 = new Point(x, 0);
-        this.punto = (p1);
+        int circuloX = punto.getX(); // Aquí guardo la posicion anterior del circulo
+        punto.setX(circuloX + x); // Y aquí le sumo a la posición anterior la nueva a la que se quiere mover la figura.
+        
     }
 
     @Override
