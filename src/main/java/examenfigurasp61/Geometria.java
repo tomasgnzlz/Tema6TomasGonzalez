@@ -2,11 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package figurasp61;
+package examenfigurasp61;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
@@ -22,8 +23,8 @@ public class Geometria {
 
         // 1. 
         // Crea un conjunto de objetos Figura y añade dos objetos de cada tipo al conjunto.
-        Set<Figura> conjuntoFiguras = new TreeSet<>();
-
+        Set<Figura> conjuntoFiguras = new HashSet<>(); // No es TreeSet xq paraqsea treeSet los objetos de la lista deben de tener implementado un comparable en cada una de sus clases. 
+        System.out.println("CONJUNTO DE FIGURAS");
         // Creo los diferentes tipos de objetos para añadirlos al conjunto
         Point puntoCirculo1 = new Point(5, 5);
         Point puntoCirculo2 = new Point(7, 7);
@@ -39,14 +40,13 @@ public class Geometria {
         Point puntoTri3 = new Point(3, 0); // Esquina inf izq
         Figura t1 = new Triangulo(puntoTri1, puntoTri2, puntoTri3, 3, 2, 3, "T1", "Azul");// CONVERSION IMPLICITA
 
-//        conjuntoFiguras.add(c1);
-//        conjuntoFiguras.add(c2);
-//        conjuntoFiguras.add(r1);
-//        conjuntoFiguras.add(t1);
-////        2. Muestra los datos de las figuras usando un foreach, 
-////        mostrando también el área de cada una.
-//          conjuntoFiguras.forEach(System.out::println); 
-////        // NOSE PORQUE ME DA ERRROR AL EJECUTAR EL CODIGO, CREO QUE ESTÁ TODO BIEN. 
+        conjuntoFiguras.add(c1);
+        conjuntoFiguras.add(c2);
+        conjuntoFiguras.add(r1);
+        conjuntoFiguras.add(t1);
+////    2. Muestra los datos de las figuras usando un foreach, mostrando también el área de cada una.
+        conjuntoFiguras.forEach(System.out::println);
+
         // 3. 
         // Crea una lista a partir del conjunto de figuras. 
         System.out.println("LISTA DE FIGURAS");
@@ -78,10 +78,9 @@ public class Geometria {
         // Realiza la búsqueda binaria según el id introducido, mostrando 
         // la posición que ocupa en la lista, si existe.
         Scanner teclado = new Scanner(System.in);
-        String idFigura;
-        System.out.println("\n  Introduce el id de una figura para realizar la busqueda binaria por favor\n");
-        //idFigura = teclado.nextLine();
-        //Collections.binarySearch(listaFiguras, idFigura, segunColor);
+        String idFigura = "6";
+
+        int pos = Collections.binarySearch(listaFiguras, new Circulo(0, puntoTri3, idFigura, "Rojo"), segunColor);
 
         // 6. 
         // Recorre la lista de figuras y guarda en una nueva lista todas aquellas que sean dibujables,
@@ -125,16 +124,14 @@ public class Geometria {
         // 8. 
         // Recorre la lista de objetos Movible y mueve a la derecha dos unidades 
         // aquellos objetos Rectángulo y tres unidades arriba los objetos Circulo.
-        int moverDosDerecha = 2;
-        int moverTresArriba = 3;
         for (Movible l : listaObjetosMovibles) {
             // Instance of para mover solo aquellos objetos que sean Rectangulos.
             if (l instanceof Rectangulo) {
-                l.moverDer(moverDosDerecha);
+                l.moverDer(2);
             }
             // Instance of para mover solo aquellos objetos que sean Circulos.
             if (l instanceof Circulo) {
-                l.moverArr(moverTresArriba);
+                l.moverArr(3);
             }
         }
 

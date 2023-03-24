@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package figurasp61;
+package examenfigurasp61;
 
 /**
  *
  * @author tomas
  */
-public class Circulo extends Figura implements Movible {
+public class Circulo extends Figura implements Movible, Comparable<Circulo> {
 
     private int longitudRadio;
     private Point punto;
@@ -70,6 +70,11 @@ public class Circulo extends Figura implements Movible {
     public void moverAba(int y) {
         Point p1 = new Point(0, y);
         this.punto = (p1);
+    }
+
+    @Override
+    public int compareTo(Circulo o) {
+        return Integer.compare(this.longitudRadio, o.longitudRadio);
     }
 
 }
