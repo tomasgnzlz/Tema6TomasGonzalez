@@ -19,6 +19,7 @@ public class EjerciciosExregVico {
         
     */
     public static void main(String[] args) {
+        System.out.println("Ejemplo A");
         // A. 
         final String regex = "^[a-zA-Z]{12}[:][ ][N-S-E-O]";
         final String string = "Localizacion: N";
@@ -33,7 +34,7 @@ public class EjerciciosExregVico {
                 System.out.println("Group " + i + ": " + matcher.group(i));
             }
         }
-        
+        System.out.println("Ejemplo B");
         // B.
         final String regexB = "^[a-zA-Z]{3}[0-9 ]{2}[a-zA-Z]{3}$";
         final String stringB = "ini22fin";
@@ -50,6 +51,7 @@ public class EjerciciosExregVico {
         }
         
         // C. 
+        System.out.println("Ejemplo C");
     }
     
 }
