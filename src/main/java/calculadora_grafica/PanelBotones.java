@@ -7,7 +7,7 @@ package calculadora_grafica;
 import java.awt.GridLayout;
 import javax.swing.JButton;
 
-public class PanelBotones extends JButton{
+public class PanelBotones extends JButton {
 
     JButton[] grupoBotones = new JButton[16];
 
@@ -39,5 +39,4 @@ public class PanelBotones extends JButton{
     public JButton[] getgrupoBotones() {
         return grupoBotones;
     }
-
 }
